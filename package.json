@@ -4,9 +4,6 @@
   "version": "2.2.19",
   "milvusVersion": "v2.2.10",
   "main": "dist/milvus",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "pre": "git submodule update --remote && rm -rf proto/proto/google && mkdir -p proto/proto/google/protobuf && wget https://raw.githubusercontent.com/protocolbuffers/protobuf/main/src/google/protobuf/descriptor.proto -O proto/proto/google/protobuf/descriptor.proto",
     "build": "rm -rf dist && tsc --declaration && node build.js",
